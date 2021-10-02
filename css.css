@@ -1,0 +1,42 @@
+.container{
+   width: 800px;
+   height: 800px;
+   margin: auto;
+   border: 1px solid;
+   padding: 50px;
+   position: relative;
+}
+/* .triangle{
+    width: 0;
+    height: 0;
+    border-left: 125px solid red;
+    border-right:125px solid green;
+    border-bottom: 125px solid lightpink;
+    border-top:125px solid cadetblue;
+    margin: 0 auto ;
+} */
+
+ .triangle{
+    width: 0;
+    height: 0;
+    border-left: 125px solid transparent;
+    border-right:125px solid transparent;
+    border-bottom: 100px solid lightpink;
+    margin: 0 auto ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.triangle:first-child{
+    border-bottom: 100px solid rgb(183, 199, 209);
+    transform: translate(-50% , -100%);
+    z-index: 100;
+}
+
+.triangle:last-child{
+    border-bottom: 100px solid lightskyblue;
+    transform: translate(-50% , 0%);
+    z-index: -100;
+}
